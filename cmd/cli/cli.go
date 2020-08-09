@@ -11,7 +11,7 @@ import (
 )
 
 var owmAPI string = "https://api.openweathermap.org/data/2.5/weather?q="
-var owmAPIID string = "&appid={REPLACE WITH API}"
+var owmAPIID string = "&appid=4239f64721234295d28a661cf628c515"
 var owmOthers string = "&units=metric"
 
 // Clouds struct
@@ -106,6 +106,7 @@ func main() {
 				var r CurrentWeather
 
 				if err := json.NewDecoder(res.Body).Decode(&r); err != nil {
+					fmt.Println("Please check your inputs.")
 					return err
 				}
 				fmt.Println("City:", r.Name, ",", r.Sys.Country)
