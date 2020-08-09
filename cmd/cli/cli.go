@@ -85,7 +85,7 @@ func main() {
 	myFlags := []cli.Flag{
 		&cli.StringFlag{
 			Name:  "host",
-			Value: "Daredev",
+			Value: "dsa0x",
 		},
 		&cli.StringFlag{
 			Name:  "city",
