@@ -11,7 +11,7 @@ import (
 )
 
 var owmAPI string = "https://api.openweathermap.org/data/2.5/weather?q="
-var owmAPIID string = "&appid=4239f64721234295d28a661cf628c515"
+var owmAPIID string = "&appid={KEY}"
 var owmOthers string = "&units=metric"
 
 // Clouds struct
